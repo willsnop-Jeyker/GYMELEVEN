@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ELEVEN — Centro de Entrenamiento | Gualeguay</title>
+  <meta name="description" content="ELEVEN Centro de Entrenamiento en Gualeguay, Entre Ríos. Entrenamiento profesional dirigido por el Prof. Luchi Razetto. Belgrano 174 — Lunes a viernes 7:00 a 22:00 hs." />
+  <link rel="icon" type="image/webp" href="assets/img/brand/logo-square.webp" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__mark">
+        <span class="preloader__bar"></span>
+        <span class="preloader__bar"></span>
+      </div>
+      <span class="preloader__text">ELEVEN</span>
+      <span class="preloader__count" id="preloaderCount">0%</span>
+    </div>
+    <div class="preloader__panel"></div>
+  </div>
+
+  <!-- Textura de grano global -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Barra de progreso de scroll -->
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#inicio" class="nav__logo" aria-label="ELEVEN inicio">
+        <svg class="logo-mark" viewBox="0 0 46 48" aria-hidden="true" focusable="false">
+          <g transform="translate(12 0) skewX(-14)" fill="#f05a28">
+            <rect x="2" y="13" width="11" height="31" rx="5.5" />
+            <rect x="17" y="2" width="11" height="42" rx="5.5" />
+          </g>
+        </svg>
+        <span>ELEVEN<small>centro de entrenamiento</small></span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <span class="nav__bg-word" aria-hidden="true">ELEVEN</span>
+        <a href="#inicio" data-nav>Inicio</a>
+        <a href="#gym" data-nav>El Gym</a>
+        <a href="#instalaciones" data-nav>Instalaciones</a>
+        <a href="#info" data-nav>Horarios</a>
+        <a href="#tienda" data-nav class="nav__shop">Tienda<sup>ELEVEN</sup></a>
+        <a href="#contacto" data-nav>Contacto</a>
+        <a href="#" class="btn btn--solid nav__cta" data-wa="Hola! Quiero empezar a entrenar en ELEVEN 💪"><span>Empezá hoy</span></a>
+      </nav>
+      <button class="nav__burger" id="navBurger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <video class="hero__video" autoplay muted loop playsinline poster="assets/img/gym/gym-4.webp" data-parallax="-0.12">
+        <source src="assets/video/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__overlay"></div>
+      <span class="hero__bgword" aria-hidden="true" data-parallax="0.08">ELEVEN</span>
+      <img class="hero__splatter hero__splatter--tr" src="assets/img/brand/splatter-2.webp" alt="" aria-hidden="true" data-parallax="0.18" />
+      <img class="hero__splatter hero__splatter--bl" src="assets/img/brand/splatter-1.webp" alt="" aria-hidden="true" data-parallax="0.26" />
+
+      <span class="hero__side" aria-hidden="true">Gualeguay — Entre Ríos /// Belgrano 174</span>
+
+      <div class="hero__content container">
+        <p class="hero__kicker"><i></i>Centro de entrenamiento</p>
+        <h1 class="hero__title">
+          <span class="hero__line"><span>ENTRENÁ</span></span>
+          <span class="hero__line hero__line--outline"><span>SIN</span>&nbsp;<span class="fill">LÍMITES</span></span>
+          <span class="hero__line hero__line--accent"><span>CON PROFES</span></span>
+        </h1>
+        <div class="hero__bottom">
+          <p class="hero__sub">Entrenamiento estructurado, dirigido por profesores de Educación Física.<br /><strong>Tu mejor versión empieza acá.</strong></p>
+          <div class="hero__actions">
+            <a href="#" class="btn btn--solid btn--lg" data-magnetic data-wa="Hola! Quiero empezar a entrenar en ELEVEN 💪"><span>Quiero entrenar</span></a>
+            <a href="#tienda" class="btn btn--ghost btn--lg" data-magnetic><span>Ver la tienda</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__bar">
+        <div class="container hero__bar-inner">
+          <span><strong>07—22 hs</strong> lun a vie</span>
+          <span class="hero__bar-sep"></span>
+          <span><strong>Belgrano 174</strong> Gualeguay</span>
+          <span class="hero__bar-sep"></span>
+          <a href="https://www.instagram.com/e_sport.gym" target="_blank" rel="noopener"><strong>@e_sport.gym</strong></a>
+          <a href="#gym" class="hero__scroll" aria-label="Bajar"><span>scroll</span><i></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE DOBLE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__row">
+        <div class="marquee__track">
+          <div class="marquee__group">
+            <span>ELEVEN</span><em>FUERZA</em><span>ELEVEN</span><em>ACTITUD</em><span>ELEVEN</span><em>DISCIPLINA</em>
+          </div>
+        </div>
+      </div>
+      <div class="marquee__row marquee__row--reverse">
+        <div class="marquee__track">
+          <div class="marquee__group">
+            <em>CENTRO DE ENTRENAMIENTO</em><span>//</span><em>GUALEGUAY</em><span>//</span><em>EST. ELEVEN</em><span>//</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ EL GYM ============ -->
+    <section class="about section" id="gym">
+      <span class="sec-bgword" aria-hidden="true" data-parallax="0.06">MÉTODO</span>
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-head__num">01</span>
+          <div>
+            <p class="sec-head__kicker">El gym</p>
+            <h2 class="sec-head__title">Más que un gimnasio,<br /><em>un método</em></h2>
+          </div>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__media reveal">
+            <figure class="about__photo" data-tilt>
+              <img src="assets/img/gym/gym-4.webp" alt="Interior del gimnasio ELEVEN" loading="lazy" />
+              <figcaption>Sala principal — Belgrano 174</figcaption>
+            </figure>
+            <div class="about__badge" data-parallax="0.1">
+              <strong>ELEVEN</strong>
+              <span>Dejalo todo<br />siempre</span>
+            </div>
+          </div>
+          <div class="about__text" data-stagger>
+            <p class="reveal about__lead">Acá no venís a dar vueltas: <strong>cada entrenamiento tiene estructura, objetivo y seguimiento.</strong></p>
+            <p class="reveal">
+              <strong>ELEVEN Centro de Entrenamiento</strong> es el espacio de entrenamiento profesional de Gualeguay,
+              dirigido por la <strong>Prof. Luchi Razetto</strong>, Profesora de Educación Física. Horarios extendidos,
+              equipamiento completo y descuentos para estudiantes de Educación Física.
+            </p>
+            <ul class="about__values reveal">
+              <li><i>01</i>Profesionalismo</li>
+              <li><i>02</i>Responsabilidad</li>
+              <li><i>03</i>Comunidad</li>
+            </ul>
+            <a href="#" class="btn btn--solid reveal" data-magnetic data-wa="Hola Luchi! Quiero info para empezar a entrenar en ELEVEN"><span>Hablá con la profe</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats">
+      <img class="stats__splatter" src="assets/img/brand/splatter-1.webp" alt="" aria-hidden="true" data-parallax="0.15" />
+      <div class="container stats__grid" data-stagger>
+        <div class="stat reveal">
+          <div class="stat__top"><span class="stat__num" data-count="15">0</span><span class="stat__suffix">hs</span></div>
+          <p>abierto por día</p>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__top"><span class="stat__num" data-count="2000">0</span><span class="stat__suffix">+</span></div>
+          <p>comunidad eleven</p>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__top"><span class="stat__num" data-count="100">0</span><span class="stat__suffix">%</span></div>
+          <p>dirigido por profesionales</p>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__top"><span class="stat__word">ELEVEN</span></div>
+          <p>actitud en cada sesión</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSTALACIONES ============ -->
+    <section class="gallery section" id="instalaciones">
+      <span class="sec-bgword sec-bgword--right" aria-hidden="true" data-parallax="0.05">FIERROS</span>
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-head__num">02</span>
+          <div>
+            <p class="sec-head__kicker">Instalaciones</p>
+            <h2 class="sec-head__title">El lugar donde<br /><em>pasa todo</em></h2>
+          </div>
+          <p class="sec-head__aside">Tocá una foto<br/>para ampliarla ↗</p>
+        </div>
+
+        <div class="gallery__grid" data-stagger>
+          <figure class="gallery__item gallery__item--tall reveal"><img src="assets/img/gym/gym-1.webp" alt="Zona de racks y barras" loading="lazy" /><figcaption><i>01</i>Zona de racks</figcaption></figure>
+          <figure class="gallery__item reveal"><img src="assets/img/gym/gym-2.webp" alt="Racks de potencia y banco" loading="lazy" /><figcaption><i>02</i>Potencia</figcaption></figure>
+          <figure class="gallery__item reveal"><img src="assets/img/gym/gym-5.webp" alt="Mancuernero completo" loading="lazy" /><figcaption><i>03</i>Mancuernero</figcaption></figure>
+          <figure class="gallery__item gallery__item--wide reveal"><img src="assets/img/gym/gym-3.webp" alt="Zona de fuerza con racks" loading="lazy" /><figcaption><i>04</i>Zona de fuerza</figcaption></figure>
+          <figure class="gallery__item reveal"><img src="assets/img/gym/gym-6.webp" alt="Máquinas de polea" loading="lazy" /><figcaption><i>05</i>Poleas</figcaption></figure>
+          <figure class="gallery__item reveal"><img src="assets/img/gym/gym-7.webp" alt="Máquinas de musculación" loading="lazy" /><figcaption><i>06</i>Máquinas</figcaption></figure>
+          <figure class="gallery__item gallery__item--wide reveal"><img src="assets/img/gym/gym-4.webp" alt="Recepción y sala principal" loading="lazy" /><figcaption><i>07</i>Recepción</figcaption></figure>
+          <figure class="gallery__item reveal"><img src="assets/img/gym/gym-8.webp" alt="Máquina de fuerza" loading="lazy" /><figcaption><i>08</i>Fuerza</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HORARIOS / INFO ============ -->
+    <section class="info section" id="info">
+      <img class="info__splatter" src="assets/img/brand/splatter-2.webp" alt="" aria-hidden="true" data-parallax="0.12" />
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-head__num">03</span>
+          <div>
+            <p class="sec-head__kicker">Info práctica</p>
+            <h2 class="sec-head__title">Horarios<br /><em>&amp; cuotas</em></h2>
+          </div>
+        </div>
+
+        <div class="info__grid" data-stagger>
+          <article class="info-card reveal" data-tilt>
+            <span class="info-card__num">A</span>
+            <h3>Horarios</h3>
+            <ul>
+              <li><span>Lunes a viernes</span><strong>7:00 — 22:00</strong></li>
+              <li><span>Sábados y domingos</span><strong>Cerrado</strong></li>
+            </ul>
+            <p class="info-card__note">15 horas por día para que entrenes cuando quieras.</p>
+          </article>
+          <article class="info-card info-card--featured reveal" data-tilt>
+            <span class="info-card__num">B</span>
+            <h3>Cuota mensual</h3>
+            <p class="info-card__price" id="cuotaPrecio">$ --.---</p>
+            <ul>
+              <li><span>Acceso libre</span><strong>Lun a vie</strong></li>
+              <li><span>Seguimiento</span><strong>Profesional</strong></li>
+              <li><span>Estudiantes de Ed. Física</span><strong>Descuento</strong></li>
+            </ul>
+            <a href="#" class="btn btn--dark" data-wa="Hola! Quiero saber el valor de la cuota de ELEVEN"><span>Consultar cuota</span></a>
+          </article>
+          <article class="info-card reveal" data-tilt>
+            <span class="info-card__num">C</span>
+            <h3>Medios de pago</h3>
+            <ul>
+              <li><span>Efectivo</span><strong>En el gym</strong></li>
+              <li><span>Transferencia</span><strong>luchi.razetto</strong></li>
+            </ul>
+            <p class="info-card__note">Abonar antes del día 15 de cada mes. Pasada esa fecha hay un recargo del 15%.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TIENDA ============ -->
+    <section class="shop section" id="tienda">
+      <span class="sec-bgword" aria-hidden="true" data-parallax="0.05">TIENDA</span>
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-head__num">04</span>
+          <div>
+            <p class="sec-head__kicker">Indumentaria oficial</p>
+            <h2 class="sec-head__title">Vestí los colores<br /><em>del gym</em></h2>
+          </div>
+          <p class="sec-head__aside">
+            <button class="shop__sizes-link" id="openSizes">Guía de talles ↗</button>
+          </p>
+        </div>
+
+        <div class="shop__grid" data-stagger>
+
+          <!-- CAMPERA -->
+          <article class="product reveal" data-product="Campera Rompeviento ELEVEN">
+            <div class="product__media">
+              <span class="product__index">/01</span>
+              <span class="product__tag">Oficial</span>
+              <img src="assets/img/shop/campera-1.png" alt="Campera rompeviento ELEVEN" class="product__img" loading="lazy" />
+              <img src="assets/img/shop/campera-2.png" alt="" class="product__img product__img--hover" loading="lazy" aria-hidden="true" />
+            </div>
+            <div class="product__thumbs">
+              <button class="is-active" data-img="assets/img/shop/campera-1.png" aria-label="Vista 1"><img src="assets/img/shop/campera-1.png" alt="" loading="lazy" /></button>
+              <button data-img="assets/img/shop/campera-2.png" aria-label="Vista 2"><img src="assets/img/shop/campera-2.png" alt="" loading="lazy" /></button>
+              <button data-img="assets/img/shop/campera-3.png" aria-label="Vista 3"><img src="assets/img/shop/campera-3.png" alt="" loading="lazy" /></button>
+              <button data-img="assets/img/shop/campera-4.png" aria-label="Vista 4"><img src="assets/img/shop/campera-4.png" alt="" loading="lazy" /></button>
+            </div>
+            <div class="product__body">
+              <h3>Campera Rompeviento</h3>
+              <p class="product__desc">Rompeviento con capucha, splatter naranja/negro. Liviana, ideal para entrenar al aire libre.</p>
+              <div class="product__row">
+                <span class="product__price" data-price="campera">$ --.---</span>
+                <div class="product__sizes" role="group" aria-label="Talles">
+                  <button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button>
+                </div>
+              </div>
+              <a href="#" class="btn btn--solid btn--full product__cta"><span>Consultar por WhatsApp</span></a>
+            </div>
+          </article>
+
+          <!-- MUSCULOSA -->
+          <article class="product reveal" data-product="Musculosa ELEVEN">
+            <div class="product__media">
+              <span class="product__index">/02</span>
+              <span class="product__tag">Oficial</span>
+              <img src="assets/img/shop/musculosa-1.png" alt="Musculosa deportiva ELEVEN" class="product__img" loading="lazy" />
+              <img src="assets/img/shop/musculosa-2.png" alt="" class="product__img product__img--hover" loading="lazy" aria-hidden="true" />
+            </div>
+            <div class="product__thumbs">
+              <button class="is-active" data-img="assets/img/shop/musculosa-1.png" aria-label="Vista 1"><img src="assets/img/shop/musculosa-1.png" alt="" loading="lazy" /></button>
+              <button data-img="assets/img/shop/musculosa-2.png" aria-label="Vista 2"><img src="assets/img/shop/musculosa-2.png" alt="" loading="lazy" /></button>
+              <button data-img="assets/img/shop/musculosa-3.png" aria-label="Vista 3"><img src="assets/img/shop/musculosa-3.png" alt="" loading="lazy" /></button>
+              <button data-img="assets/img/shop/musculosa-4.png" aria-label="Vista 4"><img src="assets/img/shop/musculosa-4.png" alt="" loading="lazy" /></button>
+            </div>
+            <div class="product__body">
+              <h3>Musculosa Deportiva</h3>
+              <p class="product__desc">Espalda deportiva y estampa splatter. Tela liviana de secado rápido.</p>
+              <div class="product__row">
+                <span class="product__price" data-price="musculosa">$ --.---</span>
+                <div class="product__sizes" role="group" aria-label="Talles">
+                  <button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button>
+                </div>
+              </div>
+              <a href="#" class="btn btn--solid btn--full product__cta"><span>Consultar por WhatsApp</span></a>
+            </div>
+          </article>
+
+          <!-- REMERA -->
+          <article class="product reveal" data-product="Remera ELEVEN">
+            <div class="product__media">
+              <span class="product__index">/03</span>
+              <span class="product__tag">Oficial</span>
+              <img src="assets/img/shop/remera-1.png" alt="Remera deportiva ELEVEN" class="product__img" loading="lazy" />
+              <img src="assets/img/shop/remera-4.png" alt="" class="product__img product__img--hover" loading="lazy" aria-hidden="true" />
+            </div>
+            <div class="product__thumbs">
+              <button class="is-active" data-img="assets/img/shop/remera-1.png" aria-label="Vista 1"><img src="assets/img/shop/remera-1.png" alt="" loading="lazy" /></button>
+              <button data-img="assets/img/shop/remera-2.png" aria-label="Vista 2"><img src="assets/img/shop/remera-2.png" alt="" loading="lazy" /></button>
+              <button data-img="assets/img/shop/remera-3.png" aria-label="Vista 3"><img src="assets/img/shop/remera-3.png" alt="" loading="lazy" /></button>
+              <button data-img="assets/img/shop/remera-4.png" aria-label="Vista 4"><img src="assets/img/shop/remera-4.png" alt="" loading="lazy" /></button>
+            </div>
+            <div class="product__body">
+              <h3>Remera de Entrenamiento</h3>
+              <p class="product__desc">Remera técnica con detalles naranjas y logo ELEVEN lateral. Comodidad total.</p>
+              <div class="product__row">
+                <span class="product__price" data-price="remera">$ --.---</span>
+                <div class="product__sizes" role="group" aria-label="Talles">
+                  <button>S</button><button>M</button><button>L</button><button>XL</button><button>XXL</button>
+                </div>
+              </div>
+              <a href="#" class="btn btn--solid btn--full product__cta"><span>Consultar por WhatsApp</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA BANNER ============ -->
+    <section class="banner">
+      <img class="banner__splatter banner__splatter--l" src="assets/img/brand/splatter-1.webp" alt="" aria-hidden="true" data-parallax="0.2" />
+      <img class="banner__splatter banner__splatter--r" src="assets/img/brand/splatter-2.webp" alt="" aria-hidden="true" data-parallax="0.1" />
+      <div class="container banner__inner">
+        <h2 class="reveal">TU MEJOR VERSIÓN<br /><em>TE ESTÁ ESPERANDO</em></h2>
+        <a href="#" class="btn btn--dark btn--lg reveal" data-magnetic data-wa="Hola! Quiero arrancar a entrenar en ELEVEN 🔥"><span>Arrancá hoy mismo</span></a>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact section" id="contacto">
+      <span class="sec-bgword sec-bgword--right" aria-hidden="true" data-parallax="0.05">VENÍ</span>
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="sec-head__num">05</span>
+          <div>
+            <p class="sec-head__kicker">Contacto</p>
+            <h2 class="sec-head__title">Vení a<br /><em>conocernos</em></h2>
+          </div>
+        </div>
+
+        <div class="contact__grid">
+          <ul class="contact__list" data-stagger>
+            <li class="reveal">
+              <span class="contact__num">↳</span>
+              <div><strong>Dirección</strong><p>Belgrano 174, Gualeguay, Entre Ríos</p></div>
+            </li>
+            <li class="reveal">
+              <span class="contact__num">↳</span>
+              <div><strong>Horarios</strong><p>Lunes a viernes — 7:00 a 22:00 hs</p></div>
+            </li>
+            <li class="reveal">
+              <span class="contact__num">↳</span>
+              <div><strong>WhatsApp</strong><p><a href="#" data-wa="Hola! Quiero más info sobre ELEVEN">Escribinos directo ↗</a></p></div>
+            </li>
+            <li class="reveal">
+              <span class="contact__num">↳</span>
+              <div><strong>Instagram</strong><p><a href="https://www.instagram.com/e_sport.gym" target="_blank" rel="noopener">@e_sport.gym ↗</a></p></div>
+            </li>
+          </ul>
+          <div class="contact__map reveal">
+            <iframe
+              src="https://www.google.com/maps?q=Belgrano+174,+Gualeguay,+Entre+R%C3%ADos,+Argentina&output=embed"
+              width="100%" height="100%" style="border:0" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" title="Mapa: ELEVEN Centro de Entrenamiento">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__word" aria-hidden="true">ELEVEN</div>
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <svg class="logo-mark logo-mark--lg" viewBox="0 0 46 48" aria-hidden="true" focusable="false">
+          <g transform="translate(12 0) skewX(-14)" fill="#f05a28">
+            <rect x="2" y="13" width="11" height="31" rx="5.5" />
+            <rect x="17" y="2" width="11" height="42" rx="5.5" />
+          </g>
+        </svg>
+        <span class="footer__brand-name">ELEVEN</span>
+        <span class="footer__brand-sub">Centro de Entrenamiento</span>
+      </div>
+      <nav class="footer__links">
+        <a href="#inicio">Inicio</a>
+        <a href="#gym">El Gym</a>
+        <a href="#instalaciones">Instalaciones</a>
+        <a href="#tienda">Tienda</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="footer__copy">© <span id="year"></span> ELEVEN Centro de Entrenamiento — Gualeguay, Entre Ríos · Prof. Luchi Razetto · Belgrano 174</p>
+    </div>
+  </footer>
+
+  <!-- ============ BOTÓN FLOTANTE WHATSAPP ============ -->
+  <a href="#" class="wa-float" data-wa="Hola! Quiero más info sobre ELEVEN" aria-label="Escribinos por WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M16 .8C7.6.8.8 7.6.8 16c0 2.7.7 5.3 2 7.6L.8 31.2l7.8-2c2.2 1.2 4.7 1.9 7.4 1.9 8.4 0 15.2-6.8 15.2-15.2S24.4.8 16 .8zm0 27.7c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.6 1.2 1.2-4.5-.3-.5c-1.3-2-2-4.4-2-6.8C3.1 8.9 8.9 3.1 16 3.1S28.9 8.9 28.9 16 23.1 28.5 16 28.5zm7.1-9.6c-.4-.2-2.3-1.1-2.6-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.3-.5.3-.8.1-.4-.2-1.6-.6-3.1-1.9-1.1-1-1.9-2.3-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.8c-.3 0-.7.1-1.1.5-.4.4-1.4 1.4-1.4 3.4s1.5 3.9 1.7 4.2c.2.3 2.9 4.5 7.1 6.3 1 .4 1.8.7 2.4.9 1 .3 1.9.3 2.6.2.8-.1 2.3-1 2.7-1.9.3-.9.3-1.7.2-1.9-.1-.2-.4-.3-.8-.5z"/></svg>
+  </a>
+
+  <!-- ============ MODAL GUÍA DE TALLES ============ -->
+  <div class="modal" id="sizesModal" role="dialog" aria-modal="true" aria-label="Guía de talles" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__box">
+      <button class="modal__close" data-close aria-label="Cerrar">✕</button>
+      <h3>Guía de talles</h3>
+      <div class="modal__tabs">
+        <button class="is-active" data-guide="assets/img/shop/talles-remera.webp">Remera</button>
+        <button data-guide="assets/img/shop/talles-musculosa.webp">Musculosa</button>
+      </div>
+      <img src="assets/img/shop/talles-remera.webp" alt="Tabla de talles" id="sizesImg" />
+    </div>
+  </div>
+
+  <!-- ============ LIGHTBOX GALERÍA ============ -->
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox__backdrop" data-close></div>
+    <button class="lightbox__close" data-close aria-label="Cerrar">✕</button>
+    <button class="lightbox__arrow lightbox__arrow--prev" id="lbPrev" aria-label="Anterior">←</button>
+    <figure>
+      <img src="" alt="Foto del gimnasio" id="lightboxImg" />
+      <figcaption id="lightboxCaption"></figcaption>
+    </figure>
+    <button class="lightbox__arrow lightbox__arrow--next" id="lbNext" aria-label="Siguiente">→</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
