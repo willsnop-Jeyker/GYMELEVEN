@@ -262,17 +262,18 @@ a { color: inherit; text-decoration: none; }
 .preloader.is-done .preloader__inner { opacity: 0; }
 .preloader.is-done { pointer-events: none; }
 
-.preloader__mark { display: flex; gap: 9px; transform: skewX(-14deg); }
+.preloader__mark { display: flex; gap: 8px; transform: skewX(-16deg); }
 
 .preloader__bar {
   width: 15px;
-  height: 56px;
-  border-radius: 8px;
+  height: 52px;
+  border-radius: 99px;
   background: var(--orange);
   animation: pulse 0.85s ease-in-out infinite alternate;
 }
 
-.preloader__bar:first-child { height: 42px; margin-top: 14px; animation-delay: 0.2s; }
+.preloader__bar:first-child { margin-top: 13px; animation-delay: 0.2s; }
+.preloader__bar:last-child { margin-bottom: 13px; }
 
 @keyframes pulse {
   from { opacity: 0.3; transform: scaleY(0.8); }
